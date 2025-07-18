@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Jyoti Singh: Owner of The Sagasious Inc. "
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Threads of All Things" # site tagline that appears below site title in masthead
 name                     : "Jyoti Singh"
 description              : "Professional DevOps freelancer"
 url                      : "https://viplav12.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
