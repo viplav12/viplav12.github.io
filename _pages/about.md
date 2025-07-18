@@ -1,25 +1,23 @@
+
 ---
+layout: page
+title: About Me
 permalink: /about/
-title: "About Me"
 ---
 
-# Hello, I'm Jyoti Singh!
+## About Me
 
-I'm a professional DevOps Engineer with over 13 years of experience helping several businesses.
+I'm Viplav, a results-driven Senior DevOps Engineer with over 13 years of hands-on experience in designing and automating cloud infrastructures.
 
-# My Expertise
-- **Skill 1**: Description
-- **Skill 2**: Description  
-- **Skill 3**: Description
+### Core Skills
+- **Cloud**: AWS (EC2, S3, Lambda, IAM, RDS, Route 53), Azure
+- **IaC**: Terraform, Ansible, CloudFormation
+- **CI/CD**: GitLab, Jenkins, GitHub Actions, CodePipeline
+- **Containers**: Docker, Kubernetes, ECS Fargate
+- **Monitoring**: Prometheus, Grafana, Splunk
+- **Security**: HashiCorp Vault, IAM, SSL/TLS
+- **Scripting**: Bash, Python, Java
 
-# My Background
-Write 2-3 paragraphs about your professional background, experience, and what makes you unique.
+I’ve led critical projects at VodafoneZiggo, Knab, SurePay, and ABN Amro, delivering scalable and cost-efficient DevOps solutions.
 
-# Education & Certifications
-- Electric and Electronics Engineering
-- Azure 
-- Aws
-- Kubernetes
-
-# When I'm Not Working
-Brief personal touch about your hobbies/interests to make you more relatable.
+Beyond work, I enjoy **yoga**, **meditation**, **chess**, and **hiking**.
