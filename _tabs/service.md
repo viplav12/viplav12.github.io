@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: service
 icon: fas fa-tools
 order: 5
 ---
