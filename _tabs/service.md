@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-tools
-order: 2
+order: 5
 ---
 
 # My Services
