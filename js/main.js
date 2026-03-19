@@ -1,83 +1,55 @@
-/**
- * Viplav Kumar Singh — Portfolio Scripts
- *
- * Sections:
- *   1. Fade-up scroll animations
- *   2. Metric counter animations
- *   3. Navigation: scroll shadow + active link highlighting
- */
-
 'use strict';
 
-/* ── 1. FADE-UP ANIMATIONS ──────────────────────────────
-   Elements with class `.fu` start invisible and slide up
-   once they enter the viewport. A small staggered delay
-   is applied per element group for a cascading effect.
+/* ── 1. MOBILE HAMBURGER MENU ───────────────────────────
+   Toggles the mobile drawer + animates the burger icon.
+   Closes when a nav link is tapped or backdrop is clicked.
+──────────────────────────────────────────────────────── */
+const burger    = document.querySelector('.burger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+function toggleMenu(force) {
+  const open = force !== undefined ? force : !burger.classList.contains('open');
+  burger.classList.toggle('open', open);
+  mobileNav.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+if (burger && mobileNav) {
+  burger.addEventListener('click', () => toggleMenu());
+
+  // Close on any link tap
+  mobileNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => toggleMenu(false));
+  });
+}
+
+
+/* ── 2. FADE-UP SCROLL ANIMATIONS ──────────────────────
+   Elements with .fu start invisible and slide up when
+   they enter the viewport.
 ──────────────────────────────────────────────────────── */
 const fadeObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const delay = entry.target.dataset.delay || 0;
+        const delay = Number(entry.target.dataset.delay) || 0;
         setTimeout(() => entry.target.classList.add('in'), delay);
         fadeObserver.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
+  { threshold: 0.07, rootMargin: '0px 0px -28px 0px' }
 );
 
-document.querySelectorAll('.fu').forEach((el, index) => {
-  el.dataset.delay = (index % 5) * 70;
+document.querySelectorAll('.fu').forEach((el, i) => {
+  el.dataset.delay = (i % 4) * 80;
   fadeObserver.observe(el);
 });
 
 
-/* ── 2. METRIC COUNTER ANIMATIONS ──────────────────────
-   Numbers in the metrics strip animate from 0 to their
-   target value using a cubic ease-out curve when scrolled
-   into view. Uses `data-target` and optional `data-suffix`.
-──────────────────────────────────────────────────────── */
-function animateCounter(el, target, suffix = '') {
-  const duration = 1600;
-  const startTime = performance.now();
-
-  const step = (currentTime) => {
-    const elapsed  = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased    = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-
-    el.textContent = Math.round(target * eased) + suffix;
-
-    if (progress < 1) requestAnimationFrame(step);
-  };
-
-  requestAnimationFrame(step);
-}
-
-const metricsObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.querySelectorAll('[data-target]').forEach((el) => {
-          animateCounter(el, Number(el.dataset.target), el.dataset.suffix || '');
-        });
-        metricsObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
-
-const metricsSection = document.getElementById('metrics');
-if (metricsSection) metricsObserver.observe(metricsSection);
-
-
-/* ── 3. NAVIGATION ──────────────────────────────────────
-   • Adds a `scrolled` class to the nav bar after 40px
-     scroll for a subtle shadow effect.
-   • Highlights the active nav link based on the section
-     currently in view.
+/* ── 3. NAVIGATION: SCROLL SHADOW + ACTIVE LINK ─────────
+   • Adds a `scrolled` class after 40px for shadow.
+   • Highlights the nav link matching the current section.
 ──────────────────────────────────────────────────────── */
 const nav      = document.getElementById('nav');
 const sections = [...document.querySelectorAll('section[id]')];
@@ -86,12 +58,11 @@ const navLinks = [...document.querySelectorAll('.nav-links a')];
 window.addEventListener(
   'scroll',
   () => {
-    // Shadow on scroll
     nav.classList.toggle('scrolled', window.scrollY > 40);
 
-    // Active link
     const current = sections.reduce(
-      (active, section) => (window.scrollY >= section.offsetTop - 100 ? section : active),
+      (active, section) =>
+        window.scrollY >= section.offsetTop - 110 ? section : active,
       sections[0]
     );
 
