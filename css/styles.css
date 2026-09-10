@@ -510,6 +510,12 @@ h2 {
 .ic-cyan   { background: var(--cyan-bg);   }
 .ic-amber  { background: var(--amber-bg);  }
 .sc-title  { font-size: .875rem; font-weight: 700; color: var(--t0); }
+.sc-desc   { font-size: .83rem; color: var(--t2); line-height: 1.65; }
+
+.engage-row {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 10px; margin-top: 28px;
+}
 
 
 /* ── 8. EXPERIENCE / TIMELINE ───────────────────────── */
