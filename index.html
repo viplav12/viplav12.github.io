@@ -3,96 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Viplav Kumar Singh — Freelance DevOps & Cloud Architect | 14+ Yrs EU Banking &amp; Fintech</title>
-  <meta name="description" content="Freelance DevOps engineer & cloud architect available for projects in India, with 14+ years building infrastructure for EU banks, fintechs & telecoms. AWS · Terraform · DevSecOps." />
+  <title>Viplav Kumar Singh - Founder, Wisqora | Automation &amp; AI Studio</title>
+  <meta name="description" content="Viplav Kumar Singh is the founder of Wisqora, an independent automation &amp; AI studio that builds systems which run themselves. 14+ years engineering for European banks, telecoms &amp; fintechs - now helping businesses automate, augment and accelerate." />
+  <meta name="theme-color" content="#050C16" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Viplav Kumar Singh - Founder, Wisqora" />
+  <meta property="og:description" content="Automation, AI agents, products and cloud platforms that take manual work off a business. We build what runs itself." />
+  <meta property="og:type" content="website" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<!-- ════════════ NAV ════════════ -->
-<nav id="nav">
-  <div class="nav-logo">VK<em>Singh</em></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#impact">Impact</a></li>
-    <li><a href="#certs">Certs</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="assets/Viplav_Kumar_Singh_CV.pdf" download class="nav-cv">↓ Download CV</a>
-  <button class="burger" aria-label="menu"><span></span><span></span><span></span></button>
-</nav>
+<a class="skip" href="#studio">Skip to content</a>
 
-<!-- Mobile nav drawer -->
+<!-- Scroll progress -->
+<div class="progress" id="progress"></div>
+
+<!-- Ambient page texture -->
+<div class="ambient" aria-hidden="true"></div>
+
+<!-- ════════════ HEADER ════════════ -->
+<header class="site-header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wisqora - home">
+      <svg class="qmark" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle class="q-arc" cx="23" cy="23" r="15" stroke="#CFA85C" stroke-width="3.4" fill="none" pathLength="100" stroke-dasharray="0.01 7.1329" stroke-dashoffset="5.3571" stroke-linecap="round"/>
+        <path d="M35.6 35.6 L46 46" stroke="#CFA85C" stroke-width="3.4" stroke-linecap="round"/>
+      </svg>
+      <span class="wordmark"><b>Wis</b>qora</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#studio">Studio</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#track-record">Track Record</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="#contact" class="btn btn-gold btn-sm">
+        Book a free mapping call
+        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
 <div class="mobile-nav" role="dialog" aria-label="Navigation menu">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#impact">Impact</a>
-  <a href="#certs">Certs</a>
-  <a href="#contact">Contact</a>
-  <a href="assets/Viplav_Kumar_Singh_CV.pdf" download class="m-cv">↓ Download CV</a>
+  <a class="m-link" href="#studio"><span class="idx">01</span>Studio</a>
+  <a class="m-link" href="#services"><span class="idx">02</span>Services</a>
+  <a class="m-link" href="#approach"><span class="idx">03</span>Approach</a>
+  <a class="m-link" href="#capabilities"><span class="idx">04</span>Capabilities</a>
+  <a class="m-link" href="#track-record"><span class="idx">05</span>Track Record</a>
+  <a class="m-link" href="#contact"><span class="idx">06</span>Contact</a>
+  <a href="#contact" class="btn btn-gold m-cta">Book a free mapping call</a>
 </div>
 
+<span id="top"></span>
+
 <!-- ════════════ HERO ════════════ -->
-<section id="hero">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
+<section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div class="hero-grid">
 
-      <!-- LEFT: Text content -->
+      <!-- LEFT -->
       <div>
-        <div class="avail-badge fu">
-          <span class="avail-dot"></span>Available for Freelance Projects · India &amp; Remote
-        </div>
-        <h1 class="hero-name fu">Viplav<br><span class="grad">Kumar Singh</span></h1>
-        <p class="hero-role fu">
-          Freelance DevOps Engineer &amp; Cloud Architect with <strong>14+ years</strong>,
-          honed building secure, scalable infrastructure for European banks, fintechs &amp; telecoms —
-          now bringing that enterprise-grade playbook to projects in India.
+        <span class="eyebrow fu">Founder · Automation &amp; AI Studio</span>
+        <p class="strap fu">Automate · Augment · Accelerate</p>
+        <h1 id="hero-title" class="fu">We build what <span class="gold-text">runs itself.</span></h1>
+        <p class="lead fu">
+          I'm <strong style="color:var(--on-ink);font-weight:600">Viplav Kumar Singh</strong> - founder of
+          <strong style="color:var(--gold-hi);font-weight:600">Wisqora</strong>, an independent automation &amp; AI studio.
+          After 14+ years building the systems European banks, telecoms and fintechs trust,
+          I now find the manual work holding a business together and replace it with
+          automation, AI agents, products and cloud platforms you own outright.
         </p>
-        <div class="hero-pills fu">
-          <span class="pill"><span class="pill-icon">☁</span>AWS · Azure · Kubernetes</span>
-          <span class="pill"><span class="pill-icon">🇪🇺</span>EU Banking &amp; Fintech Pedigree</span>
-          <span class="pill"><span class="pill-icon">📍</span>Based in India · Remote-Ready</span>
+
+        <div class="hero-ctas fu">
+          <a href="#contact" class="btn btn-gold">
+            Start with a free map
+            <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn-ghost">What we build</a>
+          <a href="assets/Viplav_Kumar_Singh_CV.pdf" download class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            CV
+          </a>
         </div>
-        <div class="hero-btns fu">
-          <a href="#contact" class="btn btn-primary">Start a Project →</a>
-          <a href="assets/Viplav_Kumar_Singh_CV.pdf" download class="btn btn-ghost">↓ Download CV</a>
-          <a href="https://linkedin.com/in/viplav-k-singh" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+
+        <div class="hero-trust fu">
+          <div class="t-lab">Systems trusted at</div>
+          <div class="t-names">
+            <span>VodafoneZiggo</span>
+            <span>ABN AMRO</span>
+            <span>Knab Bank</span>
+            <span>SurePay</span>
+            <span>General Electric</span>
+          </div>
         </div>
       </div>
 
-      <!-- RIGHT: Photo -->
-      <div class="photo-col fu">
-        <div class="photo-wrap">
-          <div class="photo-ring"></div>
-          <img class="photo-img" src="assets/profile.jpg" alt="Viplav Kumar Singh — Senior DevOps Engineer" />
+      <!-- RIGHT -->
+      <div class="hero-portrait fu">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+            <circle class="r-outer" cx="150" cy="150" r="146" stroke="rgba(207,168,92,.9)" stroke-width="1.4" fill="none" pathLength="100" stroke-dasharray="0.4 2.2" stroke-linecap="round"/>
+            <circle class="r-mid" cx="150" cy="150" r="132" stroke="rgba(207,168,92,.28)" stroke-width="1" fill="none" pathLength="100" stroke-dasharray="14 10"/>
+          </svg>
+          <img class="portrait-img" src="assets/profile.jpg" alt="Viplav Kumar Singh, founder of Wisqora" />
         </div>
-        <div class="photo-stats">
-          <div class="photo-stat">
-            <div class="photo-stat-n">14+</div>
-            <div class="photo-stat-l">Years</div>
-          </div>
-          <div class="photo-stat">
-            <div class="photo-stat-n">5</div>
-            <div class="photo-stat-l">Companies</div>
-          </div>
-          <div class="photo-stat">
-            <div class="photo-stat-n">2</div>
-            <div class="photo-stat-l">Countries</div>
-          </div>
+        <div class="portrait-badge">
+          <span class="dot"></span>Taking on new engagements · IST / CET
         </div>
       </div>
 
@@ -100,99 +133,111 @@
   </div>
 </section>
 
-<!-- Metrics strip removed — covered in full detail by the #impact section below -->
-
-<!-- ════════════ ABOUT ════════════ -->
-<section id="about" class="sec-pad">
+<!-- ════════════ STATS BAND ════════════ -->
+<section class="band-sm band-ink-900 hairline-top" aria-label="Enterprise results">
   <div class="wrap">
-    <div class="about-grid">
+    <div class="stats fu">
+      <div class="cell">
+        <div class="fig">14+</div>
+        <div class="cap">Years inside fintech, telecom, banking &amp; healthcare systems</div>
+      </div>
+      <div class="cell">
+        <div class="fig">30%</div>
+        <div class="cap">Faster releases after moving an enterprise estate to trunk-based delivery</div>
+      </div>
+      <div class="cell">
+        <div class="fig">€20K</div>
+        <div class="cap">Saved every month for one bank across 8 development teams</div>
+      </div>
+      <div class="cell">
+        <div class="fig">60%</div>
+        <div class="cap">Faster incident detection after unifying hybrid-cloud monitoring</div>
+      </div>
+    </div>
+    <p class="stats-note fu">These figures come from enterprise engagements at scale - the same rigour now goes into every Wisqora build, whether you're a growing business or an established estate.</p>
+  </div>
+</section>
 
-      <!-- Left: bio + key points -->
+<!-- ════════════ STUDIO / ABOUT ════════════ -->
+<section id="studio" class="band band-ink" aria-labelledby="studio-title">
+  <div class="wrap">
+    <div class="studio-grid">
+
+      <!-- Left -->
       <div>
-        <div class="sec-head">
-          <span class="sec-label fu">// about me</span>
-          <h2 class="fu">Engineer who delivers<br>measurable outcomes</h2>
-          <p class="sec-sub fu">
-            Solution-focused across the full DevOps lifecycle — from cloud architecture
-            and IaC to security, observability, and CI/CD automation.
+        <div class="sec-head" style="margin-bottom:0">
+          <span class="eyebrow fu">The studio &amp; the founder</span>
+          <h2 id="studio-title" class="fu">Somewhere in your business, a&nbsp;person is the integration between two&nbsp;systems.</h2>
+        </div>
+        <div class="studio-body">
+          <p class="fu">
+            That's the work Wisqora removes - the copy-paste between tools that never learned to talk,
+            the weekly report rebuilt by hand, the onboarding email sent one at a time.
+            We replace it with processes that run on their own, and we hand you the keys.
+          </p>
+          <p class="fu">
+            I spent 14+ years as a DevOps &amp; cloud engineer inside <strong>VodafoneZiggo</strong>,
+            <strong>ABN AMRO</strong>, <strong>Knab Digital Bank</strong>, <strong>SurePay</strong> and
+            <strong>General Electric</strong> - hired to solve exactly this problem at enterprise scale,
+            under banking-grade security and compliance. Wisqora brings that playbook to businesses that
+            need the same leverage without the enterprise overhead.
+          </p>
+          <p class="fu">
+            It's a lean model on purpose: <strong>one accountable lead</strong> on every engagement - me - with
+            vetted specialists brought in per project. No idle bench, no account managers, honest scoping
+            (including telling you when something is a two-day fix).
           </p>
         </div>
 
-        <div class="about-body">
-          <p class="fu">
-            With 14+ years of hands-on experience, I design and operate cloud infrastructure
-            that banks, telecoms, and fintechs trust with their most critical workloads. My work
-            spans architecture blueprints through to security hardening and cost optimisation.
-          </p>
-          <p class="fu">
-            I've built platforms at VodafoneZiggo, ABN AMRO Bank, Knab Digital Bank, and
-            SurePay — always delivering reliability, compliance, and measurable cost efficiency.
-            I'm now based in India, taking on freelance and contract engagements and bringing that
-            same European banking-grade rigour to Indian startups and enterprises.
-          </p>
-        </div>
-
-        <div class="about-points">
-          <div class="about-point fu">
-            <span class="ap-icon">⚡</span>
-            <div class="ap-text">
-              <strong>Enterprise platform architect</strong> — designed DevOps tooling stacks
-              adopted across entire business units
-            </div>
+        <div class="pledges">
+          <div class="pledge fu">
+            <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+            <div class="p-tx"><strong>Proof before scope.</strong> We automate one real, expensive task in production and measure it before pricing the larger build.</div>
           </div>
-          <div class="about-point fu">
-            <span class="ap-icon">🔒</span>
-            <div class="ap-text">
-              <strong>Security-first mindset</strong> — KMS encryption, DevSecOps pipelines,
-              compliance governance for regulated industries
-            </div>
+          <div class="pledge fu">
+            <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg></span>
+            <div class="p-tx"><strong>You own everything.</strong> Every project ends with documentation, access and a runbook - the system runs without us.</div>
           </div>
-          <div class="about-point fu">
-            <span class="ap-icon">📉</span>
-            <div class="ap-text">
-              <strong>Consistent cost optimizer</strong> — delivered 20% AWS spend reductions
-              at multiple organisations
-            </div>
+          <div class="pledge fu">
+            <span class="p-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div class="p-tx"><strong>Enterprise-grade by default.</strong> Security, encryption and compliance guardrails built the way regulated banks require them.</div>
           </div>
         </div>
       </div>
 
-      <!-- Right: meta cards -->
+      <!-- Right -->
       <div class="meta-stack">
         <div class="meta-card fu">
-          <div class="meta-label">Specializations</div>
+          <div class="meta-label">Based in</div>
+          <div class="meta-val">🇮🇳 India &nbsp;·&nbsp; 🇳🇱 Netherlands &nbsp;-&nbsp; working across IST &amp; CET</div>
+        </div>
+        <div class="meta-card fu">
+          <div class="meta-label">What we build</div>
           <div class="tags">
-            <span class="tag t-blue">DevSecOps</span>
-            <span class="tag t-cyan">Platform Engineering</span>
-            <span class="tag t-green">SRE</span>
-            <span class="tag t-purple">Cloud Architecture</span>
-            <span class="tag t-amber">GitOps</span>
+            <span class="tag gold">Automation</span>
+            <span class="tag gold">AI Agents</span>
+            <span class="tag gold">Web &amp; Mobile Apps</span>
+            <span class="tag gold">Cloud Platforms</span>
+            <span class="tag gold">Email Marketing</span>
           </div>
         </div>
         <div class="meta-card fu">
           <div class="meta-label">Industries</div>
           <div class="tags">
-            <span class="tag t-blue">Banking</span>
-            <span class="tag t-cyan">Fintech</span>
-            <span class="tag t-green">Telecom</span>
-            <span class="tag t-purple">Healthcare (GE)</span>
+            <span class="tag">Banking</span>
+            <span class="tag">Fintech &amp; Payments</span>
+            <span class="tag">Telecom</span>
+            <span class="tag">Healthcare</span>
+            <span class="tag">Small Business</span>
           </div>
         </div>
         <div class="meta-card fu">
-          <div class="meta-label">Languages Spoken</div>
+          <div class="meta-label">Languages</div>
           <div class="meta-val">🇬🇧 English (Fluent) &nbsp;·&nbsp; 🇮🇳 Hindi (Native) &nbsp;·&nbsp; 🇳🇱 Dutch (A2)</div>
         </div>
         <div class="meta-card fu">
-          <div class="meta-label">Work Authorization</div>
-          <div class="meta-val">
-            🇳🇱 Netherlands citizen — valid EU residence &amp; work permit
-            &nbsp;·&nbsp;
-            🇮🇳 India — OCI Cardholder, unrestricted right to work, no visa required
-          </div>
-        </div>
-        <div class="meta-card fu">
-          <div class="meta-label">Interests</div>
-          <div class="meta-val">🧘 Yoga &amp; Meditation &nbsp;♟ Chess &nbsp;🥾 Hiking &nbsp;🏓 Table Tennis</div>
+          <div class="meta-label">Work authorization</div>
+          <div class="meta-val">🇳🇱 Netherlands / EU citizen &nbsp;·&nbsp; 🇮🇳 India OCI - unrestricted right to work, no visa required</div>
         </div>
       </div>
 
@@ -201,208 +246,259 @@
 </section>
 
 <!-- ════════════ SERVICES ════════════ -->
-<section id="services" class="sec-pad">
+<section id="services" class="band band-ink-900 hairline-top" aria-labelledby="services-title">
   <div class="wrap">
-    <div class="sec-head sec-head-center fu">
-      <span class="sec-label">// how i can help</span>
-      <h2>Freelance Services</h2>
-      <p class="sec-sub">European banking-grade DevOps practices, packaged for India-based startups &amp; enterprises.</p>
+    <div class="sec-head center fu">
+      <span class="eyebrow" style="justify-content:center">What Wisqora builds</span>
+      <h2 id="services-title">Seven ways we take manual work off&nbsp;your&nbsp;plate</h2>
+      <p class="lead">From a single automation to a full product or cloud platform - scoped honestly, built to run without us.</p>
     </div>
 
-    <div class="skills-grid">
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-blue">☁</div>
-          <div class="sc-title">Cloud Architecture &amp; Migration</div>
+    <div class="cards">
+      <!-- Automation -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg></span>
+          <span class="idx">01</span>
         </div>
-        <p class="sc-desc">Design and migrate workloads to AWS/Azure with scalable, secure, cost-efficient architecture — from greenfield builds to legacy lift-and-shift.</p>
-      </div>
+        <h3>Automation</h3>
+        <div class="claim">Hours back, every week</div>
+        <p class="body">Invoicing, onboarding emails, cross-system data transfer and recurring reports - the repetitive work, running on its own and measured.</p>
+      </article>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-purple">🔁</div>
-          <div class="sc-title">DevOps &amp; CI/CD Setup</div>
+      <!-- AI Agents -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M12 7V4"/><circle cx="12" cy="3" r="1"/><path d="M9 13h.01M15 13h.01"/><path d="M8 19v2M16 19v2"/></svg></span>
+          <span class="idx">02</span>
         </div>
-        <p class="sc-desc">Build GitLab/GitHub Actions/Jenkins pipelines with automated testing, deployments &amp; rollback — cut release cycles from days to minutes.</p>
-      </div>
+        <h3>AI Agents</h3>
+        <div class="claim">Trained on your world</div>
+        <p class="body">Assistants and agentic workflows built on your own products, tone, rules and data - not a generic bot bolted onto your site.</p>
+      </article>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-amber">📉</div>
-          <div class="sc-title">Cloud Cost Optimisation</div>
+      <!-- Website Development -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M7 6.5h.01M10 6.5h.01"/></svg></span>
+          <span class="idx">03</span>
         </div>
-        <p class="sc-desc">A focused spend audit with rightsizing, reservation &amp; lifecycle recommendations — proven to deliver 20%+ savings.</p>
-      </div>
+        <h3>Website Development</h3>
+        <div class="claim">Launched, not just designed</div>
+        <p class="body">Business sites, landing pages and CMS setups - with hosting, domains, SSL and SEO basics handled end to end.</p>
+      </article>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-cyan">⎈</div>
-          <div class="sc-title">Kubernetes &amp; Containers</div>
+      <!-- Web App Development -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+          <span class="idx">04</span>
         </div>
-        <p class="sc-desc">Production-grade EKS/AKS clusters, Helm charts &amp; ECS Fargate platforms — built for reliability at scale.</p>
-      </div>
+        <h3>Web App Development</h3>
+        <div class="claim">Dashboards &amp; portals</div>
+        <p class="body">Customer portals, internal dashboards and SaaS products built in React, Next.js, Angular or Vue.</p>
+      </article>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-green">🔒</div>
-          <div class="sc-title">Security &amp; Compliance Hardening</div>
+      <!-- Mobile App Development -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></span>
+          <span class="idx">05</span>
         </div>
-        <p class="sc-desc">IAM, KMS encryption, DevSecOps pipelines &amp; policy-as-code governance — built for regulated industries like fintech &amp; banking.</p>
-      </div>
+        <h3>Mobile App Development</h3>
+        <div class="claim">iOS &amp; Android, shipped</div>
+        <p class="body">React Native, Flutter or native Kotlin / Swift - with App Store and Play Store releases taken care of.</p>
+      </article>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-blue">📊</div>
-          <div class="sc-title">Observability &amp; Monitoring</div>
+      <!-- Cloud Platforms -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.5 4 4 0 0 0 7 17.9"/><path d="M8 19h9.5"/></svg></span>
+          <span class="idx">06</span>
         </div>
-        <p class="sc-desc">Unified Prometheus/Grafana/ELK dashboards &amp; alerting across hybrid and cloud infrastructure — for dramatically faster MTTR.</p>
-      </div>
+        <h3>Cloud Platforms</h3>
+        <div class="claim">Banking-grade foundations</div>
+        <p class="body">AWS and Azure architecture, Kubernetes, CI/CD and DevSecOps guardrails - the layer everything else runs on.</p>
+      </article>
+
+      <!-- Email Marketing -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span class="idx">07</span>
+        </div>
+        <h3>Email Marketing</h3>
+        <div class="claim">Flows that convert</div>
+        <p class="body">Welcome sequences, lifecycle flows, newsletters, segmentation and deliverability - set up to run themselves.</p>
+      </article>
+
+      <!-- Not sure? -->
+      <article class="card fu">
+        <div class="card-top">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+          <span class="idx">-</span>
+        </div>
+        <h3>Not sure where to start?</h3>
+        <div class="claim">That's the free map</div>
+        <p class="body">We find where your team's hours actually go and show you the one task worth automating first. No obligation.</p>
+        <a href="#approach" class="textlink taglist">See how it works
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
     </div>
 
     <div class="engage-row fu">
-      <span class="tag t-blue">Fixed-Scope Projects</span>
-      <span class="tag t-cyan">Hourly Consulting</span>
-      <span class="tag t-green">Fractional / Retainer DevOps Lead</span>
-      <span class="tag t-purple">Remote or On-site (India)</span>
+      <span class="tag gold">Fixed-scope projects</span>
+      <span class="tag gold">Pilot-first engagements</span>
+      <span class="tag gold">Fractional / retainer lead</span>
+      <span class="tag gold">Remote · India &amp; EU</span>
     </div>
   </div>
 </section>
 
-<!-- ════════════ SKILLS ════════════ -->
-<section id="skills" class="sec-pad">
+<!-- ════════════ APPROACH (cream band) ════════════ -->
+<section id="approach" class="band band-cream" aria-labelledby="approach-title">
   <div class="wrap">
-    <div class="sec-head sec-head-center fu">
-      <span class="sec-label">// technical stack</span>
-      <h2>Core Expertise</h2>
-      <p class="sec-sub">A decade building, securing &amp; scaling cloud systems — across every layer of the stack.</p>
+    <div class="sec-head center fu">
+      <span class="eyebrow on-cream" style="justify-content:center">The engagement model</span>
+      <h2 id="approach-title">Four steps. The first one&nbsp;is&nbsp;free.</h2>
+      <p class="lead on-cream">No long discovery decks. We prove value in production first, then build around what already works.</p>
     </div>
 
-    <div class="skills-grid">
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-blue">☁</div>
-          <div class="sc-title">Cloud Platforms</div>
+    <div class="steps">
+      <div class="step fu">
+        <div class="s-no">01</div>
+        <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 20 3 17V4l6 3 6-3 6 3v13l-6-3-6 3z"/><path d="M9 7v13M15 4v13"/></svg></div>
+        <h3>Map</h3>
+        <p>A call and a written map of where your team's hours go. You keep it either way.</p>
+        <span class="s-free">Free</span>
+      </div>
+      <div class="step fu">
+        <div class="s-no">02</div>
+        <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v6M12 2 9 5M12 2l3 3"/><path d="M5 10h14l-1.5 10.5A2 2 0 0 1 15.5 22h-7a2 2 0 0 1-2-1.5z"/></svg></div>
+        <h3>Pilot</h3>
+        <p>We automate one of your most expensive manual tasks in production - and measure it.</p>
+      </div>
+      <div class="step fu">
+        <div class="s-no">03</div>
+        <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5 3 22l5.5-1.5"/><path d="M15 9l-8.5 8.5-1.5-1.5L13.5 7.5"/><path d="M13.5 7.5 17 4a2.8 2.8 0 0 1 4 4l-3.5 3.5z"/></svg></div>
+        <h3>Ship</h3>
+        <p>With the pilot proven, we build the remaining work around what we know already pays off.</p>
+      </div>
+      <div class="step fu">
+        <div class="s-no">04</div>
+        <div class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h11"/><path d="m10 7 4 4-4 4"/><path d="M14 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/></svg></div>
+        <h3>Hand over</h3>
+        <p>Documentation, access and a runbook. The system runs without us - you own all of it.</p>
+      </div>
+    </div>
+
+    <p class="approach-note fu">The mapping step genuinely costs nothing. If the honest answer is "this is a two-day fix," <strong>that's what I'll tell you.</strong></p>
+  </div>
+</section>
+
+<!-- ════════════ CAPABILITIES ════════════ -->
+<section id="capabilities" class="band band-ink" aria-labelledby="cap-title">
+  <div class="wrap">
+    <div class="sec-head center fu">
+      <span class="eyebrow" style="justify-content:center">Under the hood</span>
+      <h2 id="cap-title">The engineering behind the&nbsp;studio</h2>
+      <p class="lead">A decade building, securing and scaling cloud systems - across every layer of the stack.</p>
+    </div>
+
+    <div class="cap-grid">
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.5 4 4 0 0 0 7 17.9"/><path d="M8 19h9.5"/></svg></span>
+          <h3>Cloud Platforms</h3>
         </div>
         <div class="tags">
-          <span class="tag t-blue">AWS EC2</span>
-          <span class="tag t-blue">S3</span>
-          <span class="tag t-blue">Lambda</span>
-          <span class="tag t-blue">RDS</span>
-          <span class="tag t-blue">EKS</span>
-          <span class="tag t-blue">ECS Fargate</span>
-          <span class="tag t-blue">IAM</span>
-          <span class="tag t-blue">CloudWatch</span>
-          <span class="tag t-blue">GuardDuty</span>
-          <span class="tag t-blue">KMS</span>
-          <span class="tag t-blue">WAF</span>
-          <span class="tag t-blue">TGW</span>
-          <span class="tag t-cyan">Azure AKS</span>
-          <span class="tag t-cyan">Azure DevOps</span>
+          <span class="tag">AWS EC2 · S3 · Lambda</span><span class="tag">RDS</span><span class="tag">EKS</span>
+          <span class="tag">ECS Fargate</span><span class="tag">IAM</span><span class="tag">CloudWatch</span>
+          <span class="tag">GuardDuty</span><span class="tag">KMS</span><span class="tag">WAF</span>
+          <span class="tag">Azure AKS</span><span class="tag">Azure DevOps</span>
         </div>
       </div>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-green">⚙</div>
-          <div class="sc-title">Infrastructure as Code</div>
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09A1.65 1.65 0 0 0 15 4.6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9z"/></svg></span>
+          <h3>Infrastructure as Code</h3>
         </div>
         <div class="tags">
-          <span class="tag t-green">Terraform</span>
-          <span class="tag t-green">CloudFormation</span>
-          <span class="tag t-green">Ansible</span>
-          <span class="tag t-green">AWS CDK</span>
+          <span class="tag">Terraform</span><span class="tag">CloudFormation</span>
+          <span class="tag">Ansible</span><span class="tag">AWS CDK</span>
         </div>
       </div>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-purple">🔁</div>
-          <div class="sc-title">CI/CD &amp; GitOps</div>
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg></span>
+          <h3>CI/CD &amp; GitOps</h3>
         </div>
         <div class="tags">
-          <span class="tag t-purple">GitLab CI/CD</span>
-          <span class="tag t-purple">Jenkins</span>
-          <span class="tag t-purple">CodePipeline</span>
-          <span class="tag t-purple">Azure DevOps</span>
-          <span class="tag t-purple">Trunk-Based Dev</span>
-          <span class="tag t-purple">Semantic Versioning</span>
+          <span class="tag">GitLab CI/CD</span><span class="tag">Jenkins</span><span class="tag">CodePipeline</span>
+          <span class="tag">Azure DevOps</span><span class="tag">Trunk-Based Dev</span>
         </div>
       </div>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-cyan">🐳</div>
-          <div class="sc-title">Containers &amp; Orchestration</div>
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg></span>
+          <h3>Containers &amp; Orchestration</h3>
         </div>
         <div class="tags">
-          <span class="tag t-cyan">Kubernetes (EKS/AKS)</span>
-          <span class="tag t-cyan">Docker</span>
-          <span class="tag t-cyan">Helm</span>
-          <span class="tag t-cyan">ECS Fargate</span>
-          <span class="tag t-cyan">ECR</span>
-          <span class="tag t-cyan">CKA (in progress)</span>
+          <span class="tag">Kubernetes (EKS/AKS)</span><span class="tag">Docker</span>
+          <span class="tag">Helm</span><span class="tag">ECS Fargate</span><span class="tag">ECR</span>
         </div>
       </div>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-amber">📊</div>
-          <div class="sc-title">Observability</div>
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 3-4 4 3 5-6"/></svg></span>
+          <h3>Observability</h3>
         </div>
         <div class="tags">
-          <span class="tag t-amber">Prometheus</span>
-          <span class="tag t-amber">Grafana</span>
-          <span class="tag t-amber">Vector</span>
-          <span class="tag t-amber">OpenTelemetry</span>
-          <span class="tag t-amber">Datadog</span>
-          <span class="tag t-amber">Splunk</span>
-          <span class="tag t-amber">ELK / Kibana</span>
-          <span class="tag t-amber">AppDynamics</span>
+          <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Vector</span>
+          <span class="tag">OpenTelemetry</span><span class="tag">Datadog</span><span class="tag">Splunk</span>
+          <span class="tag">ELK / Kibana</span>
         </div>
       </div>
 
-      <div class="skill-card fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-blue">🔒</div>
-          <div class="sc-title">Security &amp; Compliance</div>
+      <div class="cap-card fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Security &amp; Compliance</h3>
         </div>
         <div class="tags">
-          <span class="tag t-blue">HashiCorp Vault</span>
-          <span class="tag t-blue">SonarQube</span>
-          <span class="tag t-blue">Twistlock</span>
-          <span class="tag t-blue">OWASP</span>
-          <span class="tag t-blue">SCPs</span>
-          <span class="tag t-blue">CloudTrail</span>
-          <span class="tag t-blue">Security Hub</span>
+          <span class="tag">HashiCorp Vault</span><span class="tag">SonarQube</span><span class="tag">Twistlock</span>
+          <span class="tag">OWASP</span><span class="tag">SCPs</span><span class="tag">CloudTrail</span><span class="tag">Security Hub</span>
         </div>
       </div>
 
-      <!-- Full-width card -->
-      <div class="skill-card wide fu">
-        <div class="sc-head">
-          <div class="sc-icon ic-purple">&lt;/&gt;</div>
-          <div class="sc-title">Languages &amp; Scripting</div>
+      <div class="cap-card wide fu">
+        <div class="cap-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Product &amp; Scripting</h3>
         </div>
         <div class="tags">
-          <span class="tag t-purple">Python</span>
-          <span class="tag t-purple">Bash</span>
-          <span class="tag t-purple">Java</span>
-          <span class="tag t-purple">JavaScript</span>
-          <span class="tag t-purple">PowerShell</span>
-          <span class="tag t-purple">YAML</span>
+          <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Angular</span><span class="tag">Vue</span>
+          <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Kotlin / Swift</span>
+          <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">Java</span>
+          <span class="tag">JavaScript</span><span class="tag">PowerShell</span><span class="tag">YAML</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ EXPERIENCE ════════════ -->
-<section id="experience" class="sec-pad">
+<!-- ════════════ TRACK RECORD / TIMELINE ════════════ -->
+<section id="track-record" class="band band-ink-900 hairline-top" aria-labelledby="tr-title">
   <div class="wrap">
     <div class="sec-head fu">
-      <span class="sec-label">// professional history</span>
-      <h2>Career Timeline</h2>
-      <p class="sec-sub">14+ years across Europe &amp; India's leading banks, telecoms &amp; fintechs.</p>
+      <span class="eyebrow">The enterprise track record</span>
+      <h2 id="tr-title">Where the Wisqora playbook was&nbsp;forged</h2>
+      <p class="lead">14+ years across Europe's and India's leading banks, telecoms and fintechs - the foundation every engagement is built on.</p>
     </div>
 
     <div class="timeline">
@@ -413,16 +509,15 @@
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-role">Senior DevOps Engineer</div>
-            <div class="exp-period">Apr 2024 – Feb 2025</div>
+            <div class="exp-period">Apr 2024 - Feb 2025</div>
           </div>
-          <div class="exp-co">VodafoneZiggo · Netherlands' Largest Cable &amp; Telecom (17M customers)</div>
-          <div class="exp-loc">📍 Utrecht, Netherlands</div>
+          <div class="exp-co">VodafoneZiggo · Netherlands' largest cable &amp; telecom (17M customers)</div>
+          <div class="exp-loc">Utrecht, Netherlands</div>
           <ul class="bullets">
-            <li><div><span class="b-kw">Enterprise platform architecture</span><span class="b-desc">Implemented company-wide DevOps tooling stack: GitLab, HashiCorp Vault, JFrog, SonarQube across all business units.</span></div></li>
-            <li><div><span class="b-kw">Hybrid cloud monitoring <span class="num-badge">60% faster</span></span><span class="b-desc">Architected unified monitoring integrating on-prem &amp; AWS metrics via Vector &amp; Prometheus/Grafana — cut incident response time by 60%.</span></div></li>
-            <li><div><span class="b-kw">Process transformation <span class="num-badge">30% faster</span></span><span class="b-desc">Led migration from GitFlow to Trunk-Based Development, reducing release cycle time by 30%.</span></div></li>
-            <li><div><span class="b-kw">Automation</span><span class="b-desc">Implemented semantic versioning automation for full deployment traceability across all environments.</span></div></li>
-            <li><div><span class="b-kw">24/7 operations</span><span class="b-desc">Delivered enterprise-level on-call support ensuring minimal downtime and rapid incident resolution.</span></div></li>
+            <li><div><span class="b-kw">Enterprise platform architecture</span><span class="b-desc">Implemented a company-wide DevOps tooling stack - GitLab, HashiCorp Vault, JFrog, SonarQube - across all business units.</span></div></li>
+            <li><div><span class="b-kw">Hybrid-cloud monitoring <span class="num-badge">60% faster</span></span><span class="b-desc">Architected unified monitoring integrating on-prem &amp; AWS metrics via Vector and Prometheus/Grafana - cut incident response time by 60%.</span></div></li>
+            <li><div><span class="b-kw">Process transformation <span class="num-badge">30% faster</span></span><span class="b-desc">Led migration from GitFlow to trunk-based development, reducing release cycle time by 30%.</span></div></li>
+            <li><div><span class="b-kw">24/7 operations</span><span class="b-desc">Delivered enterprise on-call support ensuring minimal downtime and rapid incident resolution.</span></div></li>
           </ul>
         </div>
       </div>
@@ -433,16 +528,15 @@
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-role">Senior DevOps Engineer</div>
-            <div class="exp-period">Feb 2023 – Jan 2024</div>
+            <div class="exp-period">Feb 2023 - Jan 2024</div>
           </div>
-          <div class="exp-co">Knab Digital Bank (Aegon) · Netherlands' Leading Digital-First Bank (600K+ customers)</div>
-          <div class="exp-loc">📍 Amsterdam, Netherlands</div>
+          <div class="exp-co">Knab Digital Bank (Aegon) · Netherlands' leading digital-first bank (600K+ customers)</div>
+          <div class="exp-loc">Amsterdam, Netherlands</div>
           <ul class="bullets">
-            <li><div><span class="b-kw">Banking cloud architecture</span><span class="b-desc">Designed secure IaC blueprints using Terraform &amp; Azure DevOps meeting strict financial services compliance.</span></div></li>
-            <li><div><span class="b-kw">Governance</span><span class="b-desc">Established SCPs across a multi-account AWS environment, enforcing standardisation and policy compliance at scale.</span></div></li>
-            <li><div><span class="b-kw">Security design</span><span class="b-desc">Architected secure payload transition system using asymmetric/symmetric KMS encryption for financial transactions.</span></div></li>
+            <li><div><span class="b-kw">Banking cloud architecture</span><span class="b-desc">Designed secure IaC blueprints using Terraform &amp; Azure DevOps meeting strict financial-services compliance.</span></div></li>
+            <li><div><span class="b-kw">Governance at scale</span><span class="b-desc">Established SCPs across a multi-account AWS environment, enforcing standardisation and policy compliance.</span></div></li>
+            <li><div><span class="b-kw">Security design</span><span class="b-desc">Architected a secure payload-transition system using asymmetric / symmetric KMS encryption for financial transactions.</span></div></li>
             <li><div><span class="b-kw">Cost optimisation <span class="num-badge">20% saved</span></span><span class="b-desc">Achieved 20% infrastructure cost reduction through automated resource lifecycle management.</span></div></li>
-            <li><div><span class="b-kw">Compliance posture</span><span class="b-desc">Maintained continuous security and governance enforcement via automated policy pipelines.</span></div></li>
           </ul>
         </div>
       </div>
@@ -452,17 +546,16 @@
         <div class="t-dot"></div>
         <div class="exp-card">
           <div class="exp-top">
-            <div class="exp-role">Senior DevOps Engineer / Cloud Engineer</div>
-            <div class="exp-period">Aug 2021 – Mar 2023</div>
+            <div class="exp-role">Senior DevOps / Cloud Engineer</div>
+            <div class="exp-period">Aug 2021 - Mar 2023</div>
           </div>
-          <div class="exp-co">SurePay via Mobiquity · IBAN-Name Verification for European Banking</div>
-          <div class="exp-loc">📍 Utrecht, Netherlands</div>
+          <div class="exp-co">SurePay via Mobiquity · IBAN-name verification for European banking</div>
+          <div class="exp-loc">Utrecht, Netherlands</div>
           <ul class="bullets">
-            <li><div><span class="b-kw">Container platform</span><span class="b-desc">Architected end-to-end ECS Fargate platform covering networking, application, and security layers.</span></div></li>
-            <li><div><span class="b-kw">Reusable IaC</span><span class="b-desc">Developed CloudFormation &amp; Terraform module library enabling consistent multi-team deployments and faster delivery.</span></div></li>
-            <li><div><span class="b-kw">Security-first pipelines</span><span class="b-desc">Implemented integrated security scanning, artefact management, and automated pipelines with comprehensive test coverage.</span></div></li>
+            <li><div><span class="b-kw">Container platform</span><span class="b-desc">Architected an end-to-end ECS Fargate platform covering networking, application and security layers.</span></div></li>
+            <li><div><span class="b-kw">Reusable IaC</span><span class="b-desc">Built a CloudFormation &amp; Terraform module library enabling consistent multi-team deployments and faster delivery.</span></div></li>
             <li><div><span class="b-kw">Cost optimisation <span class="num-badge">20% saved</span></span><span class="b-desc">Delivered 20% AWS spend reduction through architectural improvements and resource rightsizing.</span></div></li>
-            <li><div><span class="b-kw">Banking integration</span><span class="b-desc">Designed scalable onboarding platform enabling seamless new client integration for European banks.</span></div></li>
+            <li><div><span class="b-kw">Banking integration</span><span class="b-desc">Designed a scalable onboarding platform enabling seamless new-client integration for European banks.</span></div></li>
           </ul>
         </div>
       </div>
@@ -473,49 +566,49 @@
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-role">Cloud Engineer / Mobile Developer / Tech Lead</div>
-            <div class="exp-period">Dec 2015 – Oct 2021</div>
+            <div class="exp-period">Dec 2015 - Oct 2021</div>
           </div>
-          <div class="exp-co">ABN AMRO Bank N.V. via TCS · Netherlands' 3rd Largest Bank (23M+ customers)</div>
-          <div class="exp-loc">📍 Amsterdam, Netherlands</div>
+          <div class="exp-co">ABN AMRO Bank N.V. via TCS · Netherlands' 3rd-largest bank (23M+ customers)</div>
+          <div class="exp-loc">Amsterdam, Netherlands</div>
           <ul class="bullets">
-            <li><div><span class="b-kw">Cloud architecture</span><span class="b-desc">Designed ECS Fargate-based multi-tenant architecture with enterprise-grade security compliance for mobile banking.</span></div></li>
-            <li><div><span class="b-kw">Technical leadership</span><span class="b-desc">Directed Android development team of 5 engineers delivering secure mobile banking solutions on schedule.</span></div></li>
+            <li><div><span class="b-kw">Cloud architecture</span><span class="b-desc">Designed an ECS Fargate multi-tenant architecture with enterprise-grade security compliance for mobile banking.</span></div></li>
+            <li><div><span class="b-kw">Technical leadership</span><span class="b-desc">Directed an Android team of 5 engineers delivering secure mobile-banking solutions on schedule.</span></div></li>
             <li><div><span class="b-kw">CI/CD automation <span class="num-badge">€20K/mo saved</span></span><span class="b-desc">Architected mobile pipelines used by 8 teams, saving €20K/month through full deployment automation.</span></div></li>
-            <li><div><span class="b-kw">Mobile security</span><span class="b-desc">Implemented SSL pinning, code obfuscation, and fraud prevention across iOS &amp; Android.</span></div></li>
+            <li><div><span class="b-kw">Mobile security</span><span class="b-desc">Implemented SSL pinning, code obfuscation and fraud prevention across iOS &amp; Android.</span></div></li>
           </ul>
         </div>
       </div>
 
-      <!-- GE / TCS -->
+      <!-- GE -->
       <div class="t-item fu">
         <div class="t-dot"></div>
         <div class="exp-card">
           <div class="exp-top">
-            <div class="exp-role">Application Developer / Mobile Developer</div>
-            <div class="exp-period">Jun 2012 – Nov 2015</div>
+            <div class="exp-role">Application / Mobile Developer</div>
+            <div class="exp-period">Jun 2012 - Nov 2015</div>
           </div>
           <div class="exp-co">General Electric (Healthcare &amp; Industrial) via TCS</div>
-          <div class="exp-loc">📍 Bengaluru, India</div>
+          <div class="exp-loc">Bengaluru, India</div>
           <ul class="bullets">
             <li><div><span class="b-desc">Developed cross-platform enterprise applications for GE Healthcare with secure, scalable architecture principles.</span></div></li>
-            <li><div><span class="b-desc">Participated in architecture reviews and requirements analysis for large-scale IT projects; coordinated across India &amp; Europe teams.</span></div></li>
+            <li><div><span class="b-desc">Participated in architecture reviews and requirements analysis for large-scale IT projects, coordinating across India &amp; Europe teams.</span></div></li>
           </ul>
         </div>
       </div>
 
-      <!-- TCS Trainee (dashed = earliest/foundational role) -->
+      <!-- TCS Trainee -->
       <div class="t-item fu">
-        <div class="t-dot" style="background:var(--t3);box-shadow:none;border-color:var(--bg);"></div>
-        <div class="exp-card" style="border-style:dashed;">
+        <div class="t-dot" style="background:var(--gold-dark);box-shadow:0 0 0 1px var(--gold-dark);"></div>
+        <div class="exp-card foundational">
           <div class="exp-top">
             <div class="exp-role">Software Engineer Trainee</div>
-            <div class="exp-period">Mar 2012 – Jun 2012</div>
+            <div class="exp-period">Mar 2012 - Jun 2012</div>
           </div>
           <div class="exp-co">Tata Consultancy Services (TCS)</div>
-          <div class="exp-loc">📍 Gandhinagar, Gujarat, India</div>
+          <div class="exp-loc">Gandhinagar, Gujarat, India</div>
           <ul class="bullets">
-            <li><div><span class="b-desc">Comprehensive training in full-stack development: Java, SQL, HTML, JavaScript, and CSS.</span></div></li>
-            <li><div><span class="b-desc">Built an end-to-end Java-based enterprise project demonstrating complete software development lifecycle understanding.</span></div></li>
+            <li><div><span class="b-desc">Comprehensive training in full-stack development: Java, SQL, HTML, JavaScript and CSS.</span></div></li>
+            <li><div><span class="b-desc">Built an end-to-end Java enterprise project demonstrating the full software development lifecycle.</span></div></li>
           </ul>
         </div>
       </div>
@@ -524,139 +617,75 @@
   </div>
 </section>
 
-<!-- ════════════ IMPACT ════════════ -->
-<section id="impact" class="sec-pad">
+<!-- ════════════ CREDENTIALS ════════════ -->
+<section id="credentials" class="band band-ink hairline-top" aria-labelledby="cred-title">
   <div class="wrap">
-    <div class="sec-head sec-head-center fu">
-      <span class="sec-label">// measurable results</span>
-      <h2>Business Impact</h2>
-      <p class="sec-sub">Every number is a real outcome delivered at a real organisation.</p>
-    </div>
-    <div class="impact-grid">
-      <div class="impact-card fu">
-        <div class="impact-num">60%</div>
-        <div class="impact-body">
-          <h4>Faster Incident Management</h4>
-          <p>Architected unified hybrid monitoring integrating on-prem and AWS telemetry into Prometheus/Grafana, dramatically cutting MTTR.</p>
-          <div class="impact-org">@ VodafoneZiggo · Utrecht</div>
-        </div>
-      </div>
-      <div class="impact-card fu">
-        <div class="impact-num">30%</div>
-        <div class="impact-body">
-          <h4>Faster Release Cycles</h4>
-          <p>Led organisation-wide migration from GitFlow to Trunk-Based Development, removing bottlenecks across all engineering teams.</p>
-          <div class="impact-org">@ VodafoneZiggo · Utrecht</div>
-        </div>
-      </div>
-      <div class="impact-card fu">
-        <div class="impact-num">20%</div>
-        <div class="impact-body">
-          <h4>AWS Cost Reduction</h4>
-          <p>Delivered consistent 20% infrastructure savings at multiple organisations through architectural improvements and lifecycle automation.</p>
-          <div class="impact-org">@ Knab Bank &amp; SurePay</div>
-        </div>
-      </div>
-      <div class="impact-card fu">
-        <div class="impact-num">€20K</div>
-        <div class="impact-body">
-          <h4>Monthly CI/CD Savings</h4>
-          <p>Architected mobile CI/CD pipelines adopted by 8 development teams, fully automating deployments and eliminating costly manual releases.</p>
-          <div class="impact-org">@ ABN AMRO Bank · Amsterdam</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════ CERTIFICATIONS & AWARDS ════════════ -->
-<section id="certs" class="sec-pad">
-  <div class="wrap">
-    <div class="sec-head sec-head-center fu">
-      <span class="sec-label">// credentials</span>
-      <h2>Certifications &amp; Awards</h2>
-      <p class="sec-sub">Formally validated expertise across cloud, agile, and AI domains.</p>
+    <div class="sec-head center fu">
+      <span class="eyebrow" style="justify-content:center">Credentials</span>
+      <h2 id="cred-title">Certifications &amp; awards</h2>
+      <p class="lead">Formally validated expertise across cloud, agile and AI.</p>
     </div>
 
     <div class="certs-grid">
       <div class="cert-card fu">
-        <div class="cert-ic">☁</div>
-        <div class="cert-name">AWS Solutions Architect</div>
-        <div class="cert-by">Amazon Web Services</div>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.5 4 4 0 0 0 7 17.9"/><path d="M8 19h9.5"/></svg></span>
+        <div><div class="cert-name">AWS Solutions Architect</div><div class="cert-by">Amazon Web Services</div></div>
         <span class="cert-chip">Associate</span>
       </div>
       <div class="cert-card fu">
-        <div class="cert-ic">🔷</div>
-        <div class="cert-name">Azure Fundamentals</div>
-        <div class="cert-by">Microsoft</div>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 19h20z"/></svg></span>
+        <div><div class="cert-name">Azure Fundamentals</div><div class="cert-by">Microsoft</div></div>
         <span class="cert-chip">AZ-900</span>
       </div>
       <div class="cert-card fu">
-        <div class="cert-ic">🏅</div>
-        <div class="cert-name">Professional Scrum Master I</div>
-        <div class="cert-by">Scrum.org</div>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.5 13-1.5 9 5-3 5 3-1.5-9"/></svg></span>
+        <div><div class="cert-name">Professional Scrum Master I</div><div class="cert-by">Scrum.org</div></div>
         <span class="cert-chip">PSM I</span>
       </div>
       <div class="cert-card fu">
-        <div class="cert-ic">🏅</div>
-        <div class="cert-name">Professional Scrum Developer I</div>
-        <div class="cert-by">Scrum.org</div>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.5 13-1.5 9 5-3 5 3-1.5-9"/></svg></span>
+        <div><div class="cert-name">Professional Scrum Developer I</div><div class="cert-by">Scrum.org</div></div>
         <span class="cert-chip">PSD I</span>
       </div>
       <div class="cert-card fu">
-        <div class="cert-ic">🤖</div>
-        <div class="cert-name">Generative AI Fundamentals</div>
-        <div class="cert-by">Databricks</div>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M12 7V4"/><path d="M9 13h.01M15 13h.01"/></svg></span>
+        <div><div class="cert-name">Generative AI Fundamentals</div><div class="cert-by">Databricks</div></div>
         <span class="cert-chip">Certified</span>
       </div>
       <div class="cert-card fu">
-        <div class="cert-ic">⎈</div>
-        <div class="cert-name">Certified Kubernetes Admin</div>
-        <div class="cert-by">CNCF / Linux Foundation</div>
-        <span class="cert-chip wip">In Progress</span>
+        <span class="cert-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg></span>
+        <div><div class="cert-name">Certified Kubernetes Admin</div><div class="cert-by">CNCF / Linux Foundation</div></div>
+        <span class="cert-chip wip">In progress</span>
       </div>
     </div>
 
-    <div class="awards-row" style="margin-top:16px;">
+    <div class="awards-row">
       <div class="award-card fu">
-        <div class="aw-ic">🏆</div>
-        <div class="aw-name">Best Team Award</div>
-        <div class="aw-org">Excellence Award</div>
+        <span class="aw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>
+        <div class="aw-name">Best Team Award</div><div class="aw-org">Excellence Award</div>
       </div>
       <div class="award-card fu">
-        <div class="aw-ic">⚡</div>
-        <div class="aw-name">On Spot Award</div>
-        <div class="aw-org">Outstanding Performance</div>
+        <span class="aw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span>
+        <div class="aw-name">On-Spot Award</div><div class="aw-org">Outstanding Performance</div>
       </div>
       <div class="award-card fu">
-        <div class="aw-ic">🌟</div>
-        <div class="aw-name">Service &amp; Commitment</div>
-        <div class="aw-org">TCS · 2015</div>
+        <span class="aw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.5 13-1.5 9 5-3 5 3-1.5-9"/></svg></span>
+        <div class="aw-name">Service &amp; Commitment</div><div class="aw-org">TCS · 2015</div>
       </div>
       <div class="award-card fu">
-        <div class="aw-ic">🎖</div>
-        <div class="aw-name">Service &amp; Commitment</div>
-        <div class="aw-org">TCS · 2021</div>
+        <span class="aw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.5 13-1.5 9 5-3 5 3-1.5-9"/></svg></span>
+        <div class="aw-name">Service &amp; Commitment</div><div class="aw-org">TCS · 2021</div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ════════════ EDUCATION ════════════ -->
-<section id="education" class="sec-pad-sm">
-  <div class="wrap">
-    <div class="sec-head sec-head-center fu">
-      <span class="sec-label">// education</span>
-      <h2>Academic Background</h2>
-    </div>
-    <div class="edu-card fu">
-      <div class="edu-icon">🎓</div>
-      <div>
-        <div class="edu-deg">Bachelor of Engineering — Mechanical Engineering</div>
-        <div class="edu-sch">T.I.E.I.T — Rajiv Gandhi Prodyogiki Vishwavidyalaya (RGTU), Bhopal</div>
-        <div class="edu-meta">
-          <span>📅 2007 – 2011</span>
-          <span>📍 Bhopal, India</span>
+    <!-- Education -->
+    <div style="margin-top:var(--s-7)">
+      <div class="edu-card fu">
+        <span class="edu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/><path d="M22 10v6"/></svg></span>
+        <div>
+          <div class="edu-deg">Bachelor of Engineering - Mechanical Engineering</div>
+          <div class="edu-sch">T.I.E.I.T - Rajiv Gandhi Prodyogiki Vishwavidyalaya (RGTU), Bhopal</div>
+          <div class="edu-meta"><span>2007 - 2011</span><span>Bhopal, India</span></div>
         </div>
       </div>
     </div>
@@ -664,88 +693,76 @@
 </section>
 
 <!-- ════════════ CONTACT ════════════ -->
-<section id="contact" class="sec-pad">
+<section id="contact" class="band band-ink-900 hairline-top" aria-labelledby="contact-title">
   <div class="wrap">
     <div class="contact-grid">
 
-      <!-- Left: intro + contact links -->
+      <!-- Left -->
       <div>
-        <span class="sec-label fu">// get in touch</span>
-        <h2 class="contact-hed fu">Let's build<br>something great.</h2>
+        <span class="eyebrow fu">Let's talk</span>
+        <h2 class="contact-hed fu" id="contact-title">Tell me where your team<br>loses its hours.</h2>
         <p class="contact-sub fu">
-          Taking on freelance &amp; contract engagements in
-          <strong style="color:var(--c-t0)">India</strong> — cloud architecture, DevOps
-          transformation, cost audits &amp; platform engineering — backed by 14+ years
-          delivering for European banks and fintechs. Also open to select remote work for
-          <strong style="color:var(--c-t0)">EU-based clients</strong>.
+          The first step is a <strong>free map</strong> of the manual work in your business - yours to keep whether or not we work together.
+          Based in <strong>India</strong> and the <strong>Netherlands</strong>, working across IST and CET for clients in both regions.
         </p>
 
         <div class="c-links">
-          <a href="mailto:viplavsingh1209@gmail.com" class="c-link fu">
-            <div class="c-link-ic">✉</div>
-            <div>
-              <div class="c-link-lbl">Email</div>
-              <div class="c-link-val">viplavsingh1209@gmail.com</div>
-            </div>
-            <span class="c-arr">→</span>
+          <a href="mailto:viplav.singh@wisqora.com" class="c-link fu">
+            <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><div class="c-lbl">Email</div><div class="c-val">viplav.singh@wisqora.com</div></div>
+            <span class="c-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
           </a>
-          <a href="tel:+31630350408" class="c-link fu">
-            <div class="c-link-ic">📱</div>
-            <div>
-              <div class="c-link-lbl">Phone · NL </div>
-              <div class="c-link-val">+31 630 350 408</div>
-            </div>
-            <span class="c-arr">→</span>
+          <a href="https://wa.me/917410803644" target="_blank" rel="noopener" class="c-link fu">
+            <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.2 7.5L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 8.8c.2 2.6 2.1 4.5 4.7 4.7.5 0 .9-.3 1-.8l.1-.6-1.8-.8-.7.7a3.6 3.6 0 0 1-1.6-1.6l.7-.7-.8-1.8-.6.1c-.5.1-.8.5-.7 1z"/></svg></span>
+            <div><div class="c-lbl">WhatsApp</div><div class="c-val">+91 74108 03644</div></div>
+            <span class="c-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
           <a href="tel:+917410803644" class="c-link fu">
-            <div class="c-link-ic">📱</div>
-            <div>
-              <div class="c-link-lbl">Phone · India </div>
-              <div class="c-link-val">+91 74108 03644</div>
-            </div>
-            <span class="c-arr">→</span>
+            <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><div class="c-lbl">Phone</div><div class="c-val">+91 74108 03644</div></div>
+            <span class="c-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
           </a>
           <a href="https://linkedin.com/in/viplav-k-singh" target="_blank" rel="noopener" class="c-link fu">
-            <div class="c-link-ic">💼</div>
-            <div>
-              <div class="c-link-lbl">LinkedIn</div>
-              <div class="c-link-val">linkedin.com/in/viplav-k-singh</div>
-            </div>
-            <span class="c-arr">↗</span>
+            <span class="c-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z"/></svg></span>
+            <div><div class="c-lbl">LinkedIn</div><div class="c-val">linkedin.com/in/viplav-k-singh</div></div>
+            <span class="c-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+          </a>
+          <a href="https://wisqora.com" target="_blank" rel="noopener" class="c-link fu">
+            <span class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></span>
+            <div><div class="c-lbl">Studio</div><div class="c-val">wisqora.com</div></div>
+            <span class="c-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
           </a>
         </div>
       </div>
 
-      <!-- Right: availability + roles + CV download -->
+      <!-- Right -->
       <div class="contact-right">
         <div class="open-card fu">
           <div class="open-row">
-            <div class="open-dot"></div>
-            <div class="open-ttl">Available for New Engagements</div>
+            <span class="open-dot"></span>
+            <span class="open-ttl">Available for new engagements</span>
           </div>
-          <div class="open-body">
-            Based in <strong>India</strong>, OCI cardholder with unrestricted work rights.
-            Also an NL/EU citizen — able to take on remote or short-term on-site work for
-            European clients without visa friction.
-          </div>
+          <p class="open-body">
+            Wisqora takes on a limited number of projects at a time so every one gets a hands-on lead.
+            <strong>EU &amp; India coverage</strong>, no visa friction either way - remote-first, on-site where it helps.
+          </p>
         </div>
 
         <div class="roles-card fu">
-          <div class="roles-lbl">Available For</div>
+          <div class="roles-lbl">Good fits for a first project</div>
           <div class="tags">
-            <span class="tag t-blue">Cloud Migration Projects</span>
-            <span class="tag t-cyan">DevOps &amp; CI/CD Setup</span>
-            <span class="tag t-green">Cost Optimisation Audits</span>
-            <span class="tag t-purple">Fractional DevOps Lead</span>
-            <span class="tag t-amber">Technical Advisory</span>
-            <span class="tag t-amber">Short-Term Contracts</span>
+            <span class="tag gold">Automate a manual workflow</span>
+            <span class="tag gold">Ship an AI agent</span>
+            <span class="tag gold">Build a web or mobile app</span>
+            <span class="tag gold">Cloud &amp; DevOps setup</span>
+            <span class="tag gold">Cost-optimisation audit</span>
+            <span class="tag gold">Fractional tech lead</span>
           </div>
         </div>
 
-        <a href="assets/Viplav_Kumar_Singh_CV.pdf" download
-           class="btn btn-primary fu"
-           style="justify-content:center;font-size:.9rem;padding:15px;">
-          ↓ Download Full CV
+        <a href="assets/Viplav_Kumar_Singh_CV.pdf" download class="btn btn-ghost fu" style="width:100%">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download founder CV
         </a>
       </div>
 
@@ -756,13 +773,49 @@
 <!-- ════════════ FOOTER ════════════ -->
 <footer>
   <div class="wrap">
-    © 2026 Viplav Kumar Singh &nbsp;·&nbsp;
-    <a href="https://linkedin.com/in/viplav-k-singh" target="_blank" rel="noopener">LinkedIn ↗</a>
-    &nbsp;·&nbsp; viplav12.github.io
+    <div class="foot-grid">
+      <div class="foot-brand-col">
+        <div class="foot-brand">
+          <svg class="qmark" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="23" cy="23" r="15" stroke="#CFA85C" stroke-width="3.4" fill="none" pathLength="100" stroke-dasharray="0.01 7.1329" stroke-dashoffset="5.3571" stroke-linecap="round"/>
+            <path d="M35.6 35.6 L46 46" stroke="#CFA85C" stroke-width="3.4" stroke-linecap="round"/>
+          </svg>
+          <span class="wordmark"><b>Wis</b>qora</span>
+        </div>
+        <p class="f-strap">Automation, AI agents, products and cloud platforms that take manual work off a business.</p>
+        <p class="f-tag">Automate · Augment · Accelerate</p>
+      </div>
+
+      <div>
+        <p class="f-h">Explore</p>
+        <div class="f-list">
+          <a href="#studio">Studio</a>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#track-record">Track Record</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="f-h">Reach</p>
+        <div class="f-list">
+          <a href="mailto:viplav.singh@wisqora.com">viplav.singh@wisqora.com</a>
+          <a href="https://wa.me/917410803644" target="_blank" rel="noopener">WhatsApp · +91 74108 03644</a>
+          <a href="https://linkedin.com/in/viplav-k-singh" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://wisqora.com" target="_blank" rel="noopener">wisqora.com ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-base">
+      <span>© 2026 Viplav Kumar Singh · Wisqora</span>
+      <span>Built &amp; run from India 🇮🇳 &amp; the Netherlands 🇳🇱</span>
+    </div>
   </div>
 </footer>
 
-<!-- Scripts (deferred — loads after HTML is parsed) -->
+<!-- Scripts -->
 <script src="js/main.js" defer></script>
 
 </body>

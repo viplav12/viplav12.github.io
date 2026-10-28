@@ -1,8 +1,8 @@
 'use strict';
 
-/* ── 1. MOBILE HAMBURGER MENU ───────────────────────────
-   Toggles the mobile drawer + animates the burger icon.
-   Closes when a nav link is tapped or backdrop is clicked.
+/* ── 1. MOBILE MENU ─────────────────────────────────────
+   Toggles the mobile drawer + animates the burger, and
+   locks body scroll while open. Closes on link tap.
 ──────────────────────────────────────────────────────── */
 const burger    = document.querySelector('.burger');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -11,22 +11,20 @@ function toggleMenu(force) {
   const open = force !== undefined ? force : !burger.classList.contains('open');
   burger.classList.toggle('open', open);
   mobileNav.classList.toggle('open', open);
-  document.body.style.overflow = open ? 'hidden' : '';
+  burger.setAttribute('aria-expanded', String(open));
+  document.body.classList.toggle('nav-open', open);
 }
 
 if (burger && mobileNav) {
   burger.addEventListener('click', () => toggleMenu());
-
-  // Close on any link tap
-  mobileNav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => toggleMenu(false));
-  });
+  mobileNav.querySelectorAll('a').forEach((link) =>
+    link.addEventListener('click', () => toggleMenu(false))
+  );
 }
 
 
-/* ── 2. FADE-UP SCROLL ANIMATIONS ──────────────────────
-   Elements with .fu start invisible and slide up when
-   they enter the viewport.
+/* ── 2. FADE-UP ON SCROLL ───────────────────────────────
+   Elements with .fu rise into view once, staggered lightly.
 ──────────────────────────────────────────────────────── */
 const fadeObserver = new IntersectionObserver(
   (entries) => {
@@ -38,40 +36,42 @@ const fadeObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.07, rootMargin: '0px 0px -28px 0px' }
+  { threshold: 0.08, rootMargin: '0px 0px -24px 0px' }
 );
 
 document.querySelectorAll('.fu').forEach((el, i) => {
-  el.dataset.delay = (i % 4) * 80;
+  el.dataset.delay = (i % 4) * 70;
   fadeObserver.observe(el);
 });
 
 
-/* ── 3. NAVIGATION: SCROLL SHADOW + ACTIVE LINK ─────────
-   • Adds a `scrolled` class after 40px for shadow.
-   • Highlights the nav link matching the current section.
+/* ── 3. HEADER STATE, PROGRESS BAR & ACTIVE LINK ────────
+   • `stuck` class after 24px for the glass background.
+   • Scroll-progress bar scales with page position.
+   • Highlights the nav link for the section in view.
 ──────────────────────────────────────────────────────── */
-const nav      = document.getElementById('nav');
+const header   = document.getElementById('header');
+const progress = document.getElementById('progress');
 const sections = [...document.querySelectorAll('section[id]')];
 const navLinks = [...document.querySelectorAll('.nav-links a')];
 
-window.addEventListener(
-  'scroll',
-  () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
+function onScroll() {
+  const y = window.scrollY;
+  header.classList.toggle('stuck', y > 24);
 
-    const current = sections.reduce(
-      (active, section) =>
-        window.scrollY >= section.offsetTop - 110 ? section : active,
-      sections[0]
-    );
+  if (progress) {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.transform = `scaleX(${h > 0 ? y / h : 0})`;
+  }
 
-    navLinks.forEach((link) => {
-      link.classList.toggle(
-        'active',
-        link.getAttribute('href') === `#${current?.id}`
-      );
-    });
-  },
-  { passive: true }
-);
+  const current = sections.reduce(
+    (active, section) => (y >= section.offsetTop - 120 ? section : active),
+    sections[0]
+  );
+  navLinks.forEach((link) =>
+    link.classList.toggle('active', link.getAttribute('href') === `#${current?.id}`)
+  );
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
