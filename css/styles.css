@@ -736,6 +736,44 @@ footer {
 .fu { opacity: 0; transform: translateY(20px); transition: opacity .6s var(--e-out), transform .6s var(--e-out); }
 .fu.in { opacity: 1; transform: none; }
 
+/* ── TESTIMONIALS (ported from wisqora.com site.css) ── */
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-6); }
+.testimonial-grid > .testimonial:only-child { grid-column: 1 / -1; max-width: none; }
+.testimonial-grid > .testimonial:only-child blockquote { max-width: 62ch; }
+.testimonial {
+  margin: 0; padding: var(--s-6);
+  background: var(--ink-850); box-shadow: var(--sheen);
+  border-radius: var(--radius);
+}
+.testimonial blockquote {
+  margin: 0; padding: 0;
+  font-family: var(--sans); font-weight: 400;
+  font-size: clamp(1.0625rem, 0.95rem + 0.6vw, 1.375rem);
+  line-height: 1.5; letter-spacing: -0.005em;
+  color: var(--on-ink); max-width: 34ch;
+}
+.testimonial blockquote::before { content: "\201C"; margin-right: 0.08em; color: var(--gold); }
+.testimonial blockquote::after  { content: "\201D"; margin-left: 0.04em; color: var(--gold); }
+.testimonial .t-result {
+  display: inline-block; margin-top: var(--s-4);
+  font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.3rem 0.55rem; border: 1px solid var(--line-gold); color: var(--gold-hi);
+}
+.testimonial figcaption { display: flex; align-items: center; gap: var(--s-3); margin-top: var(--s-5); }
+.testimonial__initials {
+  flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.04em;
+  background: var(--ink-800); color: var(--gold-hi); border: 1px solid var(--line-gold-soft);
+}
+.testimonial__who { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.testimonial__name { font-weight: 500; font-size: 0.95rem; letter-spacing: -0.005em; color: var(--on-ink); }
+.testimonial__role { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.02em; color: var(--on-ink-muted); }
+.testimonial__role a { color: var(--gold-hi); text-decoration: none; }
+.testimonial__role a:hover { text-decoration: underline; }
+@media (max-width: 860px) { .testimonial-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .testimonial { padding: var(--s-5); } }
+
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
   .fu { opacity: 1; transform: none; }
